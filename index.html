@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - To Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <main class="contenedor">
+        <!-- Ícono superior estilo libreta -->
+        <div class="icono">📋</div>
+
+        <h1>javascript - to do listPRUEBA</h1>
+
+        <!-- Caja para escribir y botón + -->
+        <div class="grupo-input">
+            <input type="text" id="inputTarea" placeholder="escriba aqui su tarea..." />
+            <button id="btnAgregar">+</button>
+        </div>
+
+        <!-- Aquí se van a agregar las tareas desde JavaScript -->
+        <ul id="listaTareas"></ul>
+
+        <!-- Contadores de abajo -->
+        <p class="resumen">
+            Tareas pendientes: <span id="pendientes">0</span>
+            Completadas: <span id="completadas">0</span>
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #2b5876;
+    /* Color de fondo cambiado a azul petróleo */
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.icono {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+/* Fila del input y botón circular */
+.grupo-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#inputTarea {
+    flex: 1;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #a3c6dc;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    outline: none;
+}
+
+#inputTarea::placeholder {
+    color: #b8d4e6;
+}
+
+#btnAgregar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e8f1f5;
+    color: #2b5876;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btnAgregar:hover {
+    background-color: #ffffff;
+}
+
+/* Lista de tarjetas blancas */
+#listaTareas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.item-tarea {
+    background-color: white;
+    color: #1e3a5f;
+    padding: 14px 16px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-tarea {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.info-tarea input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    accent-color: #2b5876;
+}
+
+/* Estilo cuando se marca el checkbox */
+.tachado {
+    text-decoration: line-through;
+    color: #8c9ba5;
+}
+
+.btn-borrar {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.resumen {
+    font-size: 15px;
+    color: #d0e3f0;
+}

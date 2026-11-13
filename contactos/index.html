@@ -4,36 +4,44 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact List</title>
+    <title>Lista de Contactos</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
     <main class="contenedor">
-        <h1>Contact List</h1>
+        <h1>Lista de Contactos</h1>
 
-        <!-- Caja del formulario igual a la imagen del profe -->
+        <!-- Símbolo de usuario igual a la imagen -->
+        <div class="caja-icono">
+            <div class="circulo-gris">
+                <div class="cabeza"></div>
+                <div class="cuerpo"></div>
+            </div>
+        </div>
+
+        <!-- Formulario en español -->
         <div class="formulario">
-            <input type="text" id="nombre" placeholder="Input your name" />
-            <input type="text" id="apellido" placeholder="Input your last name" />
-            <input type="text" id="telefono" placeholder="Input your phone number" />
-            <input type="text" id="ciudad" placeholder="Input your city" />
-            <input type="text" id="direccion" placeholder="Input your address" />
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
+            <input type="text" id="apellido" placeholder="Ingresa tu apellido" />
+            <input type="text" id="telefono" placeholder="Ingresa tu teléfono" />
+            <input type="text" id="ciudad" placeholder="Ingresa tu ciudad" />
+            <input type="text" id="direccion" placeholder="Ingresa tu dirección" />
 
             <div class="radios">
                 <label>
-                    <input type="radio" name="genero" id="radioFemale" value="female" checked /> Female
+                    <input type="radio" name="genero" id="radioFemale" value="female" checked /> Femenino
                 </label>
                 <label>
-                    <input type="radio" name="genero" id="radioMale" value="male" /> Male
+                    <input type="radio" name="genero" id="radioMale" value="male" /> Masculino
                 </label>
             </div>
 
-            <button id="btnAgregar">ADD</button>
+            <button id="btnAgregar">AGREGAR</button>
         </div>
 
-        <!-- Lista donde aparecerán las tarjetas blancas -->
+        <!-- Lista donde aparecerán los contactos -->
         <ul id="listaContactos"></ul>
     </main>
 

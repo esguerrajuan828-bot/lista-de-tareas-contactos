@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact List</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <main class="contenedor">
+        <h1>Contact List</h1>
+
+        <!-- Caja del formulario igual a la imagen del profe -->
+        <div class="formulario">
+            <input type="text" id="nombre" placeholder="Input your name" />
+            <input type="text" id="apellido" placeholder="Input your last name" />
+            <input type="text" id="telefono" placeholder="Input your phone number" />
+            <input type="text" id="ciudad" placeholder="Input your city" />
+            <input type="text" id="direccion" placeholder="Input your address" />
+
+            <div class="radios">
+                <label>
+                    <input type="radio" name="genero" id="radioFemale" value="female" checked /> Female
+                </label>
+                <label>
+                    <input type="radio" name="genero" id="radioMale" value="male" /> Male
+                </label>
+            </div>
+
+            <button id="btnAgregar">ADD</button>
+        </div>
+
+        <!-- Lista donde aparecerán las tarjetas blancas -->
+        <ul id="listaContactos"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -120,3 +120,91 @@ h1 {
     font-size: 15px;
     color: #d0e3f0;
 }
+
+/* ===== MEJORAS VISUALES - APORTE PERSONAL ===== */
+
+body {
+    min-height: 100vh;
+    align-items: center;
+    padding: 40px 15px;
+    background: linear-gradient(135deg, #101c3a, #234e70, #537895);
+}
+
+.contenedor {
+    max-width: 480px;
+    padding: 35px 28px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+#inputTarea {
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 10px;
+    padding: 12px;
+    background: rgba(255,255,255,0.10);
+    transition: 0.3s;
+}
+
+#inputTarea:focus {
+    border-color: #54e1c1;
+    box-shadow: 0 0 10px rgba(84,225,193,0.4);
+}
+
+#btnAgregar {
+    background: #54e1c1;
+    color: #12334b;
+    transition: 0.3s;
+}
+
+#btnAgregar:hover {
+    transform: scale(1.12);
+    background: white;
+}
+
+.item-tarea {
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.item-tarea:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 20px rgba(0,0,0,0.22);
+}
+
+.btn-borrar {
+    background: #ffe4e4;
+    border-radius: 8px;
+    padding: 7px 10px;
+    transition: 0.3s;
+}
+
+.btn-borrar:hover {
+    background: #ffbaba;
+    transform: scale(1.1);
+}
+
+.resumen {
+    line-height: 2;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

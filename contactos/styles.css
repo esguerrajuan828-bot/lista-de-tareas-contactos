@@ -321,3 +321,68 @@ h1 {
         font-size: 13px;
     }
 }
+
+/* ===== IDENTIDAD VISUAL FINAL ===== */
+
+.contenedor {
+    animation: aparecer 0.8s ease;
+}
+
+h1 {
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+h1::after {
+    content: "Tus personas importantes, siempre cerca";
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    color: #bcefe5;
+    margin-top: 10px;
+}
+
+.caja-icono {
+    animation: flotar 3s ease-in-out infinite;
+}
+
+.item-contacto {
+    animation: aparecer 0.5s ease;
+}
+
+.formulario {
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.08);
+}
+
+.contenedor::after {
+    content: "© 2026 | Mi espacio personal";
+    display: block;
+    margin-top: 35px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    font-size: 12px;
+    color: #c8dce9;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-7px);
+    }
+}

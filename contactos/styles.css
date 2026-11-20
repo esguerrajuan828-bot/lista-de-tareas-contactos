@@ -155,3 +155,169 @@ h1 {
     font-size: 18px;
     cursor: pointer;
 }
+
+/* =====================================
+   MEJORAS VISUALES - LISTA DE CONTACTOS
+   Aporte personal
+===================================== */
+
+/* Fondo general */
+body {
+    min-height: 100vh;
+    padding: 40px 15px;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #101c3a, #234e70, #537895);
+}
+
+/* Panel principal */
+.contenedor {
+    max-width: 550px;
+    margin: 10px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+/* Título */
+h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    margin-bottom: 22px;
+}
+
+/* Icono de perfil */
+.caja-icono {
+    border-radius: 50%;
+    background: #54e1c1;
+    box-shadow: 0 5px 18px rgba(84,225,193,0.3);
+    transition: transform 0.3s;
+}
+
+.caja-icono:hover {
+    transform: rotate(10deg) scale(1.08);
+}
+
+.circulo-gris {
+    background: #234e70;
+}
+
+/* Campos del formulario */
+.formulario input[type="text"] {
+    padding: 14px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: #f4f8fc;
+    color: #263b55;
+    transition: 0.3s;
+}
+
+.formulario input[type="text"]:focus {
+    border-color: #54e1c1;
+    box-shadow: 0 0 10px rgba(84,225,193,0.35);
+}
+
+/* Opciones de género */
+.radios {
+    color: white;
+    font-weight: 600;
+}
+
+.radios input {
+    accent-color: #54e1c1;
+    cursor: pointer;
+}
+
+/* Botón agregar */
+#btnAgregar {
+    width: 160px;
+    padding: 13px;
+    background: #54e1c1;
+    color: #12334b;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#btnAgregar:hover {
+    background: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Tarjetas de contactos */
+#listaContactos {
+    margin-top: 25px;
+}
+
+.item-contacto {
+    padding: 17px;
+    border-radius: 13px;
+    border-left: 5px solid #54e1c1;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.item-contacto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 20px rgba(0,0,0,0.22);
+}
+
+.texto-contacto {
+    color: #263b55;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* Botones editar y eliminar */
+.botones-accion {
+    gap: 10px;
+}
+
+.btn-icono {
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-icono:hover {
+    background: #e0f7f3;
+    transform: scale(1.15);
+}
+
+/* Botón regresar */
+.contenedor a {
+    background: #54e1c1 !important;
+    color: #12334b !important;
+    border-radius: 10px !important;
+    transition: 0.3s;
+}
+
+.contenedor a:hover {
+    background: white !important;
+    transform: translateY(-3px);
+}
+
+/* Adaptación a celulares */
+@media (max-width: 480px) {
+    .contenedor {
+        width: 100%;
+        padding: 22px 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .item-contacto {
+        padding: 12px;
+    }
+
+    .texto-contacto {
+        font-size: 13px;
+    }
+}
